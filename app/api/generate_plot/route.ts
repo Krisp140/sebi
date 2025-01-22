@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   baseURL: "https://models.inference.ai.azure.com",
-  apiKey: "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",
+  apiKey: process.env.GITHUB_TOKEN,
 });
 
 const SYSTEM_PROMT = `Generate comics story with image prompts and captions in JSON format
